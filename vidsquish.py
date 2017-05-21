@@ -13,11 +13,11 @@ def generate_pic (i,colours, size):
         for y in range(0, height):
             img[y,x,:] = colours[x][y,0]
     img = cv2.cvtColor(img, cv2.COLOR_HSV2RGB)
-    cv2.imwrite("barcode_full_%d.png" % i, img)
-    img = Image.open('barcode_full_' + str(i) + '.png')
+    cv2.imwrite("vidsquish_%d.png" % i, img)
+    img = Image.open('vidsquish_' + str(i) + '.png')
     new_im.paste(img, (i,0))
     img.close()
-    os.remove('barcode_full_' + str(i) + '.png')
+    os.remove('vidsquish_' + str(i) + '.png')
 
 def resize_image (image, size=200):
     h, w, _ = image.shape
@@ -43,9 +43,9 @@ def process_video (input_movie, size=(2000,200)):
 
 #imageio.plugins.ffmpeg.download() # Uncomment this if ffmpeg is not installed
 
-path = raw_input('Path? ') # Ex.: "C:\Users\Me\Downloads\video.mp4"
+path = raw_input('Path? ') # Ex.: "C:\Users\Me\Downloads\video"
 savename = raw_input('Output name? ') # Name of the output image
-input_movie = imageio.get_reader(path,'ffmpeg')
+input_movie = imageio.get_reader(path + '.mp4','ffmpeg')
 
 frames = int(input_movie.get_meta_data()['duration'])
 fps = int(input_movie.get_meta_data()['fps'])
