@@ -5,3 +5,5 @@ Before running the script, uncomment line 44 "imageio.plugins.ffmpeg.download()"
 
 This script is adapted from the wonderful Alan Zucconi's tutorial for making 'game barcodes' which you can find here: https://www.patreon.com/posts/tutorial-game-of-3762003
 The biggest change is that this takes local files and not Youtube videos (which requires a different library, and thus created a need for the bulk of the minor changes), but also that it doesn't do the colour sorting thing.
+
+![Example output image, episode 4 of Kamen Rider: Drive](http://i.imgur.com/eKv7mNm.png)
