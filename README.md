@@ -8,4 +8,4 @@ The biggest change is that this takes local files and not Youtube videos (which 
 
 Example image:
 ![Example output image, episode 4 of Kamen Rider: Drive](http://i.imgur.com/eKv7mNm.png)
-[Imgur link](http://i.imgur.com/eKv7mNm.png) 
+This looks like a featureless line on github so here's an [Imgur link](http://i.imgur.com/eKv7mNm.png) 
